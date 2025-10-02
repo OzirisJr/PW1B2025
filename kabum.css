@@ -15,10 +15,40 @@
     border-radius: 10px;
 }
 
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    gap: 0px;
+    justify-content: flex-start;
+    padding: 05px;   
+}
+
+.menu li{
+    margin-right: 05px;
+}
+
 .banner{
     justify-content: flex-start;
 }
 
-.produtos{
-    
+.produtos1{
+    display: inline-block;
+}
+
+.produtos2{
+    display: inline-block;
+}
+
+.produtos3{
+    display: inline-block;
+}
+
+.produtos4{
+    display: inline-block;
+}
+
+.produtos5{
+    display: inline-block;
 }
