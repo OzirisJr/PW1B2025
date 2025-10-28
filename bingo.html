@@ -95,6 +95,7 @@
     </table>
     
     <script>
+
         //B 1-15
         //I 16-30
         //N 31-45
@@ -103,7 +104,7 @@
         var b = []
         for(var i = 1; i< 16; i++)
         {
-            n.push(i)
+            b.push(i)
         }
         var i = []
         var n = []
@@ -111,9 +112,42 @@
         {
             n.push(i)
         }
-        document.write(n)
+        //document.write(n)
         var g = []
         var o = []
+        
+
+        function PreencherLista(numeroInicial, numeroFinal)
+        {
+            var retorno = []
+            for(var i = numeroInicial; i<= numeroFinal; i++)
+            {
+                retorno.push(i)
+            }
+            return retorno 
+        }
+        var b = PreencherLista(1,15)
+        var i = PreencherLista(16,30)
+        var n = PreencherLista(31,45)
+        var g = PreencherLista(46,60)
+        var o = PreencherLista(61,75)
+
+
+        function NumeroAleatorio(numeroMinimo, numeroMaximo)
+        {
+            var retorno = Math.random()
+            retorno = (retorno*numeroMaximo)
+            retorno = Math.floor(retorno)
+            if(retorno >= numeroMinimo)
+            {
+                return retorno 
+            } else{
+                return NumeroAleatorio(numeroMinimo, numeeroMaximo)
+            }
+        }
+
+        document.write("<h1>"+ NumeroAleatorio(0,76)+"<\h1>" )
+
     </script>
 
 </body>
